@@ -17,4 +17,8 @@ class Radio():
 			self.volumen+= 5
 	def bajar_volumen (self):
 		if self.volumen <= 0:
-			self.volumen += 0					
+			self.volumen = 0
+	def subir_emirosa (self):
+		if self.en_FM == True:
+			self.emisora 
+								
