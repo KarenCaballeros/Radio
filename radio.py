@@ -27,7 +27,7 @@ class Radio():
 			else:
 				self.emisoraFM += 0.5
 		elif self.en_FM == False:
-			if self.emisoraAM > 1300
+			if self.emisoraAM > 1300:
 				self.emisoraAM = 300
 			else:
 				self.emisoraAM += 40	
@@ -38,14 +38,14 @@ class Radio():
 			else:
 				self.emisoraFM -= 0.5
 		elif self.en_FM == False:
-			if self.emisoraAM < 300
+			if self.emisoraAM < 300:
 				self.emisoraAM = 1300
 			else:
 				self.emisoraAM -= 40
 	def cambiar_frecuencia(self):
 		if self.en_FM == True:
 			self.en_FM = False
-		else
+		else:
 			self.en_FM = True												
 
 								
