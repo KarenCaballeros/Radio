@@ -9,7 +9,7 @@ while desea_continuar == True:
 	if not mi_radio.encendido:
 		print("")
 		print(
-"""Su radio esta apagado. 
+"""SU RADIO ESTA APAGA. 
 1. Encenderlo
 2. Salir.""")
 		encender_salir= int(input("Ingrese opcion elegida: "))
@@ -24,6 +24,17 @@ while desea_continuar == True:
 			print("Opcion invalida.")
 
 	else:
+		print("")
+		print("ESTADO ACTUAL DE RADIO")
+		print("Marca del radio: " , mi_radio.marca)
+		print("Encendido: " , mi_radio.encendido)	
+		if mi_radio.en_FM == True:
+			print("Emisora: FM")
+			print("Estacion: " , mi_radio.emisoraFM)
+		else:
+			print("Emisora: AM") 
+			print("Estacion: " , mi_radio.emisoraAM)
+		print("Volumen: " , mi_radio.volumen)
 		print("")
 		print(
 """*MENU*
@@ -57,18 +68,7 @@ while desea_continuar == True:
 		else:
 			print("Opcion invalida")
 
-		print("")
-		print("ESTADO ACTUAL DE RADIO")
-		print("")	
-		print("Marca del radio: " , mi_radio.marca)
-		print("Encendido: " , mi_radio.encendido)	
-		if mi_radio.en_FM == True:
-			print("Emisora: FM")
-			print("Estacion: " , mi_radio.emisoraFM)
-		else:
-			print("Emisora: AM") 
-			print("Estacion: " , mi_radio.emisoraAM)
-		print("Volumen: " , mi_radio.volumen)		
+			
 
 		
 
