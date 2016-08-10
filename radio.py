@@ -22,7 +22,7 @@ class Radio():
 			self.volumen -= 5	
 	def subir_emisora(self):
 		if self.en_FM == True:
-			if self.emisoraFM > 107.0:
+			if self.emisoraFM >= 107.0:
 				self.emisoraFM = 87.0
 			else:
 				self.emisoraFM += 0.5
@@ -33,7 +33,7 @@ class Radio():
 				self.emisoraAM += 40	
 	def bajar_emisora(self):
 		if self.en_FM == True:
-			if self.emisoraFM < 87.0:
+			if self.emisoraFM <= 87.:
 				self.emisoraFM = 107.0
 			else:
 				self.emisoraFM -= 0.5
