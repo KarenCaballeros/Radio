@@ -9,7 +9,7 @@ while desea_continuar == True:
 	if not mi_radio.encendido:
 		print("")
 		print(
-"""SU RADIO ESTA APAGA. 
+"""SU RADIO ESTA APAGADO. 
 1. Encenderlo
 2. Salir.""")
 		encender_salir= int(input("Ingrese opcion elegida: "))
